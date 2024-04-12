@@ -4,6 +4,7 @@ RUN apt-get update \
     && apt-get install -y \
         apache2-utils \
         lsb-release \
+        python3 \
     && apt-get clean all \
     && mkdir -p --mode=0755 /usr/share/keyrings \
     && curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null \
