@@ -7,4 +7,6 @@ RUN apt-get update && apt-get install -y lsb-release && apt-get clean all \
     && apt-get update && apt-get install cloudflared \
     && cloudflared --version
 
+COPY . .
+
 CMD node index.js
