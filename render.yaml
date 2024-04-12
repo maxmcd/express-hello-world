@@ -1,4 +1,4 @@
 services:
- - type: web
+  - type: web
     runtime: docker
     name: express-hello-world
