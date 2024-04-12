@@ -9,4 +9,6 @@ RUN apt-get update && apt-get install -y lsb-release && apt-get clean all \
 
 COPY . .
 
+RUN npm i
+
 CMD node index.js
